@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="title">Survey Form</h1>
+
+        <div class="container">
+
+           <p id="description">
+                Let us know how we can improved freecodecamp.
+         </p>
+            <form action="" id="survey-form" class="form" >
+
+                <div class="form__group">
+                    <label for="name" id="name-label">* Name</label>
+                    <input type="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form__group">
+                        <label for="email" id="email-label">* Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form__group">
+                            <label for="number" id="number-label">* Age</label>
+                            <input type="number" id="number" min="1" max="70" placeholder="Age">
+                        </div>
+
+                        <div class="form__group">
+                                <label for="Role">
+                                    Which option best describes your current role?
+                                </label>
+                                <select name="Role" id="dropdown">
+                                    <option value="" disabled>Select an option</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Full time job">Full time job</option>
+                                    <option value="Full time learner">Full time learner</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="Rating">
+                                How likely is that you would recommend freecodecamp for a friend?
+                            </label>
+                            <div class="form__sub-group">
+                                <label for="Definately">
+                                <input type="radio" name="Rating" value="Definately">
+                                Definately  
+                                </label>
+
+                                <label for="Maybe">
+                                        <input type="radio" name="Rating" value="Maybe">
+                                        Maybe  
+                                        </label>
+
+                                        <label for="Not Sure">
+                                                <input type="radio" name="Rating" value="Not Sure">
+                                                Not Sure  
+                                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="like">
+                                What do you like most in FCC:
+                            </label>
+                            <select name="like" id="like">
+                                <option value="" disabled>Select an option</option>
+                                <option value="Challenges">Challenges</option>
+                                <option value="Projects">Projects</option>
+                                <option value="Community">Community</option>
+                                <option value="Open Source">Open Source</option>
+                            </select>
+                    </div>
+                    <div class="form__group">
+
+                        <label for="improvements">Thing that should be improved in the 
+                            (Check all that apply:)
+                        </label>
+
+                        <div class="form__sub-group">
+                            <label>
+                                <input type="checkbox"  name="prefer" value="Front-end Projects">
+                                Front-end Projects
+                            </label>
+                            <label>
+                                    <input type="checkbox"  name="prefer" value="Back-end Projects">
+                                    Back-end Projects
+                                </label>
+                                <label>
+                                        <input type="checkbox"  name="prefer" value=" Data Visualization ">
+                                        Data Visualization 
+                                    </label>
+                                    <label>
+                                            <input type="checkbox"  name="prefer" value=" Challenges  ">
+                                        Challenge
+                                    </label>
+                                    <input type="checkbox"  name="prefer" value=" Open Source Community  ">
+                                    Open Source Community
+                                </label>
+                            <label>
+                            <input type="checkbox"  name="prefer" value="Gitters help rooms">
+                            Gitters help rooms
+                            </label>
+                        <label>
+                    <input type="checkbox"  name="prefer" value="Videos">
+                    Videos
+                </label>
+            <label>
+            <input type="checkbox"  name="prefer" value="City Meetups">
+            City Meetups
+        </label>
+    <label>
+    <input type="checkbox"  name="prefer" value="Wiki">
+    Wiki
+</label>
+<label>
+        <input type="checkbox"  name="prefer" value="Forum">
+        Forum
+    </label>
+    <label>
+            <input type="checkbox"  name="prefer" value="Forum">
+            Additional Courses
+        </label>
+</div>
+</div>    
+<div class="form__group">
+<label for="comments">Any comments or suggestion?</label>
+<textarea name="comments" id="comments"></textarea>
+
+</div> 
+<div class="form__Submit-group">
+<input class="btn"type="Submit" value="Submit" id="Submit">
+
+</div>
+ </form>
+        </div>
+    </div>
+</body>
+</html>
